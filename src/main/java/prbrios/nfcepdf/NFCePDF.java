@@ -50,9 +50,7 @@ public class NFCePDF {
 		try {
 
 			this.saida = this.defineDiretorioArquivo("AUT", this.saida);
-
 			NfeProc nfeProd = this.transformaXmlEmObjeto(this.xml);
-			
 			String html = new NFCePDFGeradorHtml(nfeProd).toString();
 			NFCePDFGeradorPdf g = new NFCePDFGeradorPdf();
 			g.criarPdf(html, this.saida);
@@ -66,13 +64,4 @@ public class NFCePDF {
 		return saida;
 	}
 
-	public static void main(String[] args) throws Exception {
-
-		 
-		
-		
-		
-		//NfeProc t = o.objetoCFe("");
-		//System.out.println(t);
-	}
 }
