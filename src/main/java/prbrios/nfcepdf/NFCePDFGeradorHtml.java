@@ -112,7 +112,10 @@ public class NFCePDFGeradorHtml {
 	
 	private String consumidor(NFe cfe) {
 		
-		EnderDest enderDest = cfe.getInfNFe().getDest().getEnderDest();
+		if(cfe.getInfNFe().getDest() == null)
+			return "";
+		
+		EnderDest enderDest = enderDest = cfe.getInfNFe().getDest().getEnderDest();
 		
 		String dadosConsumidor = "N&atilde;o informado";
 		if(cfe.getInfNFe().getDest() != null) {
