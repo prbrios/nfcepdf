@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "pag")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Pag {
+public class DetPag {
 
 	@XmlElement(name="tPag")
 	private String tPag;
@@ -15,9 +15,6 @@ public class Pag {
 	@XmlElement(name="vPag")
 	private Double vPag;
 
-	@XmlElement(name="detPag")
-	private DetPag detPag;
-	
 	public String gettPag() {
 		return tPag;
 	}
@@ -33,13 +30,5 @@ public class Pag {
 	public void setvPag(Double vPag) {
 		this.vPag = vPag;
 	}
-
-	public DetPag getDetPag() {
-		return detPag;
-	}
-
-	public void setDetPag(DetPag detPag) {
-		this.detPag = detPag;
-	}
-
+	
 }

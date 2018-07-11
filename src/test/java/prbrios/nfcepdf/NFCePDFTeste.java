@@ -5,8 +5,13 @@ import org.junit.Test;
 public class NFCePDFTeste {
 
 	@Test
-	public void gerarPDF() {
-		
+	public void gerar() {
+		//this.gerarPDFXML310();
+		//this.gerarPDFXML400();
+	}
+	
+	private void gerarPDFXML310() {
+
 		String xml ="<nfeProc versao=\"3.10\" xmlns=\"http://www.portalfiscal.inf.br/nfe\">"
 				+ "<NFe xmlns=\"http://www.portalfiscal.inf.br/nfe\">"
 				+ "<infNFe Id=\"NFe24180309305229000109650010000012301000024817\" versao=\"3.10\">"
@@ -138,6 +143,98 @@ public class NFCePDFTeste {
 
 		xml = "<nfeProc><NFe xmlns=\"http://www.portalfiscal.inf.br/nfe\"><infNFe Id=\"NFe24180409305229000532650010000001501000014010\" versao=\"3.10\"><ide><cUF>24</cUF><cNF>00001401</cNF><natOp>Venda de mercadoria adquirida ou recebid</natOp><indPag>0</indPag><mod>65</mod><serie>1</serie><nNF>150</nNF><dhEmi>2018-04-11T15:48:40-03:00</dhEmi><tpNF>1</tpNF><idDest>1</idDest><cMunFG>2408003</cMunFG><tpImp>4</tpImp><tpEmis>1</tpEmis><cDV>0</cDV><tpAmb>1</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><procEmi>0</procEmi><verProc>000</verProc></ide><emit><CNPJ>09305229000532</CNPJ><xNome>CENTRAL DISTRIBUIDORA DE ALIMENTOS LTDA   ME</xNome><xFant>NONATO ATACAREJO  DEPOSITO FECHADO</xFant><enderEmit><xLgr>RUA ALCIDES HENRIQUE DA SILVA</xLgr><nro>S N</nro><xBairro>BARROCAS</xBairro><cMun>2408003</cMun><xMun>MOSSORO</xMun><UF>RN</UF><CEP>59621375</CEP><cPais>1058</cPais><xPais>BRASIL</xPais></enderEmit><IE>204819946</IE><CRT>3</CRT></emit><det nItem=\"1\"><prod><cProd>P002028</cProd><cEAN>7896490288881</cEAN><xProd>FLOCOS DE MILHO CLARAMIL 30X500G</xProd><NCM>11041900</NCM><CFOP>5102</CFOP><uCom>UND</uCom><qCom>1.0000</qCom><vUnCom>0.6100</vUnCom><vProd>0.61</vProd><cEANTrib>7896490288881</cEANTrib><uTrib>UND</uTrib><qTrib>1.0000</qTrib><vUnTrib>0.6100</vUnTrib><indTot>1</indTot></prod><imposto><vTotTrib>0.03</vTotTrib><ICMS><ICMS20><orig>0</orig><CST>20</CST><modBC>3</modBC><pRedBC>33.33</pRedBC><vBC>0.41</vBC><pICMS>18.00</pICMS><vICMS>0.07</vICMS></ICMS20></ICMS></imposto></det><total><ICMSTot><vBC>0.41</vBC><vICMS>0.07</vICMS><vICMSDeson>0.00</vICMSDeson><vBCST>0.00</vBCST><vST>0.00</vST><vProd>0.61</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc><vII>0.00</vII><vIPI>0.00</vIPI><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vOutro>0.00</vOutro><vNF>0.61</vNF><vTotTrib>0.03</vTotTrib></ICMSTot></total><transp><modFrete>9</modFrete></transp><pag><tPag>01</tPag><vPag>0.61</vPag></pag><infAdic><infCpl>VENDEDOR : 000589 MICAELLE KELIANA .|PEDIDO : FC5/000399 .||</infCpl></infAdic></infNFe><infNFeSupl><qrCode>http://nfce.set.rn.gov.br/consultarNFCe.aspx?chNFe=24180409305229000532650010000001501000014010&amp;nVersao=100&amp;tpAmb=1&amp;dhEmi=323031382d30342d31315431353a34383a34302d30333a3030&amp;vNF=0.61&amp;vICMS=0.07&amp;digVal=4859657241786c616b685231574d4e6f712f374446474d453932413d&amp;cIdToken=000001&amp;cHashQRCode=AA12B55DB72CD8DF9B775BF17BDD8AE06106205D</qrCode></infNFeSupl><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"/><Reference URI=\"#NFe24180409305229000532650010000001501000014010\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"/><DigestValue>HYerAxlakhR1WMNoq/7DFGME92A=</DigestValue></Reference></SignedInfo><SignatureValue>oOdKxTJomWSUIlM/z1AS1xUtYzrhcMWBM6o0Xyekuztr5is6HGpPsjQODeABuNCcOca83sqgEWTVoE8vc+pmnCUwnnSIbBk2un8+8H1+9rXRmqqieY2qvuGurAZCZrEesNeAxpqtW6mWd61sDlQzpY6uXefVoJrVM3lxIdnjgGHdDJ7bnDHhLQGWdzC+lrVhDzqtX5w+M1J3Ii+FJrFbMLKM4VLjVb76KOi7VLMac9kAzpFvlSLriZ2dYyqw+50BlLiu4ecE6PmqTecGtPIfW/ae5HtN8tUD2V7w8wJjverXl0GQmA4Uq7AGXhfpB/QRpOkEAcTD5LBI9rcHXC/Dtw==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe><infProt><dhRecbto>2018-04-11T15:53:38</dhRecbto><nProt>324180084173940</nProt></infProt></protNFe></nfeProc>";
 		
+		try {
+			NFCePDF nfcePdf = new NFCePDF(xml, null);
+			nfcePdf.gerarPdfAutorizacao();
+			System.out.println(nfcePdf.getSaida());
+			
+			NFCePDFImpressao imp = new NFCePDFImpressao();
+			imp.imprimir(nfcePdf.getSaida());
+			
+		}catch(NFCePDFException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	private void gerarPDFXML400() {
+		
+		String xml ="<nfeProc versao=\"4.00\" xmlns=\"http://www.portalfiscal.inf.br/nfe\"><NFe xmlns=\"http://www.p"
+				+ "ortalfiscal.inf.br/nfe\"><infNFe Id=\"NFe41180706230511000186650010000010169000022671\" "
+				+ "versao=\"4.00\"><ide><cUF>41</cUF><cNF>00002267</cNF><natOp>Venda de mercadoria adquirida ou rece"
+				+ "bida de terceiros</natOp><mod>65</mod><serie>1</serie><nNF>1016</nNF><dhEmi>2018-07-11T12:58:09-0"
+				+ "3:00</dhEmi><tpNF>1</tpNF><idDest>1</idDest><cMunFG>4106902</cMunFG><tpImp>4</tpImp><tpEmis>9</tp"
+				+ "Emis><cDV>1</cDV><tpAmb>2</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><pro"
+				+ "cEmi>0</procEmi><verProc>000</verProc><dhCont>2018-07-10T12:00:52-03:00</dhCont><xJust>PROBLEMA N"
+				+ "A INTERNET</xJust></ide><emit><CNPJ>06230511000186</CNPJ><xNome>FORT CURITIBA COMERCIAL DE FOLHEA"
+				+ "DOS E ACESSORIOS LTDA</xNome><xFant>CURITIBA</xFant><enderEmit><xLgr>RUA DESEMBARGADOR WESTPHALEN"
+				+ "</xLgr><nro>123</nro><xBairro>CENTRO</xBairro><cMun>4106902</cMun><xMun>CURITIBA</xMun><UF>PR</UF"
+				+ "><CEP>80010110</CEP><cPais>1058</cPais><xPais>BRASIL</xPais></enderEmit><IE>9030389260</IE><CRT>1"
+				+ "</CRT></emit><dest><CPF>07857700975</CPF><xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VAL"
+				+ "OR FISCAL</xNome><enderDest><xLgr>LOCALIDADE SAO CARLOS DO IVAI</xLgr><nro>1599</nro><xBairro>CEN"
+				+ "TRO</xBairro><cMun>4124608</cMun><xMun>SAO CARLOS DO IVAI</xMun><UF>PR</UF><CEP>87770000</CEP><cP"
+				+ "ais>1058</cPais><xPais>BRASIL</xPais><fone>34381145</fone></enderDest><indIEDest>9</indIEDest></d"
+				+ "est><det nItem=\"1\"><prod><cProd>050907</cProd><cEAN>1234567891231</cEAN><xProd>NOTA FISCAL EMIT"
+				+ "IDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xProd><NCM>90041000</NCM><CFOP>5102</CFOP><uCo"
+				+ "m>UND</uCom><qCom>1.0000</qCom><vUnCom>45.0000</vUnCom><vProd>45.00</vProd><cEANTrib>123456789123"
+				+ "1</cEANTrib><uTrib>UND</uTrib><qTrib>1.0000</qTrib><vUnTrib>45.0000</vUnTrib><indTot>1</indTot></"
+				+ "prod><imposto><vTotTrib>0.00</vTotTrib><ICMS><ICMSSN102><orig>0</orig><CSOSN>102</CSOSN></ICMSSN1"
+				+ "02></ICMS></imposto></det><total><ICMSTot><vBC>0.00</vBC><vICMS>0.00</vICMS><vICMSDeson>0.00</vIC"
+				+ "MSDeson><vFCP>0.00</vFCP><vBCST>0.00</vBCST><vST>0.00</vST><vFCPST>0.00</vFCPST><vFCPSTRet>0.00</"
+				+ "vFCPSTRet><vProd>45.00</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc><vII>0.00<"
+				+ "/vII><vIPI>0.00</vIPI><vIPIDevol>0.00</vIPIDevol><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vOutro>"
+				+ "0.00</vOutro><vNF>45.00</vNF><vTotTrib>0.00</vTotTrib></ICMSTot></total><transp><modFrete>9</modF"
+				+ "rete></transp><pag><detPag><tPag>01</tPag><vPag>45.00</vPag></detPag></pag><infAdic><infCpl>DOCUM"
+				+ "ENTO EMITIDO POR ME OPTANTE PELO SIMPLES NACIONAL. NAO GERA DIREITO A CREDITO FISCAL DE ICMS.|</i"
+				+ "nfCpl></infAdic></infNFe><infNFeSupl><qrCode><![CDATA[http://www.fazenda.pr.gov.br/nfce/qrcode/?c"
+				+ "hNFe=41180706230511000186650010000010169000022671&nVersao=100&tpAmb=2&cDest=07857700975&dhEmi=323"
+				+ "031382d30372d31315431323a35383a30392d30333a3030&vNF=45.00&vICMS=0.00&digVal=5551746130454e707a683"
+				+ "26d6f763051754b30435776416c6e4b4d3d&cIdToken=000003&cHashQRCode=79806B50D1A69BC9090F95EA9C97953B5"
+				+ "EEE866B]]></qrCode><urlChave>http://www.fazenda.pr.gov.br</urlChave></infNFeSupl><Signature xmlns"
+				+ "=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://ww"
+				+ "w.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/"
+				+ "xmldsig#rsa-sha1\"/><Reference URI=\"#NFe41180706230511000186650010000010169000022671\"><Transfor"
+				+ "ms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Alg"
+				+ "orithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm="
+				+ "\"http://www.w3.org/2000/09/xmldsig#sha1\"/><DigestValue>UQta0ENpzh2mov0QuK0CWvAlnKM=</DigestValu"
+				+ "e></Reference></SignedInfo><SignatureValue>EUn/98siWLFOCyjfo5wqQbSSrCnPEI8PViYJ+bVcs+j8Y23eIyIpxe"
+				+ "3Nw/zTcytRVTWs4qfPTqbeH7dExF+gvXko2zw0KoeSnTloJbfoKE0xwzrlzuVWJrs+mybmZrMTerMiOxP1t8+3WJsKn0T/QCS"
+				+ "ydTAH/RQ7NkbvHbaUHBsYMDwibN9P2u58wOtQpfwUO5gwcM8LzVu82fpsyZhpL9okPTnih5UZcgVkFMysbnRveDnp3/DCYVEN"
+				+ "aOzSOf6KNreogbs4lygHeG5BfmuoQWDmsTsRKBG7OfncYWH1rDFyfSV/UZ1sAAZg53yyH9N/s3Itqc6Q7csDn3+P/gqeNA==<"
+				+ "/SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIDTCCBfWgAwIBAgIQYPYyTU/3LxVl7kUfrmK42jANB"
+				+ "gkqhkiG9w0BAQsFADB4MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYS"
+				+ "BSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4XDTE4MDMyNzE"
+				+ "0MzEzMVoXDTE5MDMyNzE0MzEzMVowgf0xCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJQ1AtQnJhc2lsMQswCQYDVQQIDAJQUjER"
+				+ "MA8GA1UEBwwIQ3VyaXRpYmExNjA0BgNVBAsMLVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQ"
+				+ "jEWMBQGA1UECwwNUkZCIGUtQ05QSiBBMTEfMB0GA1UECwwWQXV0ZW50aWNhZG8gcG9yIEFSIEFibDFIMEYGA1UEAww/Rk9SVC"
+				+ "BDVVJJVElCQSBDT01FUkNJTyBERSBGT0xIRUFET1MgRSBBQ0VTU09SSU9TOjA2MjMwNTExMDAwMTg2MIIBIjANBgkqhkiG9w0"
+				+ "BAQEFAAOCAQ8AMIIBCgKCAQEAxgQsCsIWEGq+O2npLcZra+8jcShDzCwYJaaalOF8d2Ahv+lYC7zsUDSoUqHEs3VCpooV8uN1"
+				+ "Lf1Rse7UJ3EfWheG/w2eijRaidx+ZivhIhgdwG+KWicKMppiZ32AfQz+oSPfw1c0f+M1IHPC7NUVe8Iz3tM7Tx3qQ4CzHSc5n"
+				+ "SF/ib6RwylRQDbm4Shrdw5DcV0/6SCcE5SkP3q7JwaVo22bqsWI7HpSmjMbsxD11JGQ8Hf7AXh9Exm4Riegu5jB9UwYqF2/MH"
+				+ "T+vzVn+rZVIP8dg08TlriA2BoKeqflzhTJoQ2w/Z1FFc8PdWIjm3mInv1Ry7rJ1IWncPUmALuUowIDAQABo4IDCzCCAwcwgbo"
+				+ "GA1UdEQSBsjCBr6A+BgVgTAEDBKA1BDMxOTAzMTk2MTczMzgyNTU4MzAwMDAwMDAwMDAwMDAwMDAwMDAxNTQzNzY1NzdTRVNQ"
+				+ "U1CgIQYFYEwBAwKgGAQWUk9TQSBNQVJJQSBGUkFOQ0EgTElNQaAZBgVgTAEDA6AQBA4wNjIzMDUxMTAwMDE4NqAXBgVgTAEDB"
+				+ "6AOBAwwMDAwMDAwMDAwMDCBFm1hcmNlbGFAZ3J1cG9yaG9tYS5jb20wCQYDVR0TBAIwADAfBgNVHSMEGDAWgBRTfX+dvtFh0C"
+				+ "C62p/jiacTc1jNQjB/BgNVHSAEeDB2MHQGBmBMAQIBDDBqMGgGCCsGAQUFBwIBFlxodHRwOi8vaWNwLWJyYXNpbC5jZXJ0aXN"
+				+ "pZ24uY29tLmJyL3JlcG9zaXRvcmlvL2RwYy9BQ19DZXJ0aXNpZ25fUkZCL0RQQ19BQ19DZXJ0aXNpZ25fUkZCLnBkZjCBvAYD"
+				+ "VR0fBIG0MIGxMFegVaBThlFodHRwOi8vaWNwLWJyYXNpbC5jZXJ0aXNpZ24uY29tLmJyL3JlcG9zaXRvcmlvL2xjci9BQ0Nlc"
+				+ "nRpc2lnblJGQkc1L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2"
+				+ "l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25SRkJHNS9MYXRlc3RDUkwuY3JsMA4GA1UdDwEB/wQEAwIF4DAdBgNVHSUEFjAUBggrBgE"
+				+ "FBQcDAgYIKwYBBQUHAwQwgawGCCsGAQUFBwEBBIGfMIGcMF8GCCsGAQUFBzAChlNodHRwOi8vaWNwLWJyYXNpbC5jZXJ0aXNp"
+				+ "Z24uY29tLmJyL3JlcG9zaXRvcmlvL2NlcnRpZmljYWRvcy9BQ19DZXJ0aXNpZ25fUkZCX0c1LnA3YzA5BggrBgEFBQcwAYYta"
+				+ "HR0cDovL29jc3AtYWMtY2VydGlzaWduLXJmYi5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQC3OaH1FsbQRt"
+				+ "QA47T67XnwDtwfotxVnEZlqCeUQTAGX27v2AfA7L0yLXD4mjO9/5+fQ7a9L6bmdGAdPFbrjKvfn2Exl19Z46eQx/uDq3sG1Y5"
+				+ "8CmadY9MFkRnDCfhMRTvDJBP0xg1M7/wUZ6xmfIBJ/k3efaWgLm3IUZcSHdbbgRGTHfrW1IszyKdzO9rFEMXBeoBI1pWt8Zh2"
+				+ "1Tr9J5ddKFMKYaNHPbFq2R4g845/5z/uicilmKATrZUPQ4S/5fV17PBhWiXAjAh9/Q95EwrO/MZi1ZKyIWVGyoPPIN8hNIgOT"
+				+ "mVJWfzQf1OxGa5vgWKtemt8cMNNr3VABGME28dcrZvTwAo1TtY9TNIl3cVm6JMTFDAKp2kKstfh2Rq3MxybaOHA0wJ4GV2leU"
+				+ "Gzg/9aZAzwJrVkjmzEgABQg69wFDbvRuBEQKXHkyK/7ve8V5Yc01W3mIgNmAm+n7SBIdKJ/UsQkwb/6Ipm0C/XyRcUzlTraXC"
+				+ "lAO2TqUgrJGIjS5XrAmWTVVozRsfClUBGHi0vnectII1yqA8ZNU73pSrTxwnXrK1acc55wFf7TPpPc5I0gDSmVpbx4K5Sl5+y"
+				+ "oeWLA8VeXeUKJrkeKrEajmer2TiPDwIOCwVwkbHSm2/iiljK+5QW/dJSTg7I8G9gIFCUhgLDT22PfAMavwrHtzPgOw==</X50"
+				+ "9Certificate></X509Data></KeyInfo></Signature></NFe><protNFe xmlns=\"http://www.portalfiscal.inf."
+				+ "br/nfe\" versao=\"4.00\"><infProt><tpAmb>2</tpAmb><verAplic>PR-v4_1_5</verAplic><chNFe>4118070623"
+				+ "0511000186650010000010169000022671</chNFe><dhRecbto>2018-07-11T12:59:15-03:00</dhRecbto><nProt>14"
+				+ "1180000878683</nProt><digVal>UQta0ENpzh2mov0QuK0CWvAlnKM=</digVal><cStat>100</cStat><xMotivo>Auto"
+				+ "rizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>";
+	
 		try {
 			NFCePDF nfcePdf = new NFCePDF(xml, null);
 			nfcePdf.gerarPdfAutorizacao();
