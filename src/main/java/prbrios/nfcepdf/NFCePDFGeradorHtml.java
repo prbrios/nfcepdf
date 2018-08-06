@@ -196,6 +196,28 @@ public class NFCePDFGeradorHtml {
 		sb.append("VALOR TOTAL R&#36;");
 		sb.append("</td>");
 		sb.append("<td class=\"direita 100pt\">");
+		sb.append(this.formataNumero(nfe.getInfNFe().getTotal().getIcmsTot().getvProd().toString()));
+		sb.append("</td>");
+		sb.append("</tr>");
+		
+		if(nfe.getInfNFe().getTotal().getIcmsTot().getvOutro() != null) {
+			if(nfe.getInfNFe().getTotal().getIcmsTot().getvOutro() > 0.00 ) {
+				sb.append("<tr>");
+				sb.append("<td class=\"100pt\">");
+				sb.append("ACRESCIMO R&#36;");
+				sb.append("</td>");
+				sb.append("<td class=\"direita 100pt\">");
+				sb.append(this.formataNumero(nfe.getInfNFe().getTotal().getIcmsTot().getvOutro().toString()));
+				sb.append("</td>");
+				sb.append("</tr>");
+			}
+		}
+		
+		sb.append("<tr>");
+		sb.append("<td class=\"100pt\">");
+		sb.append("VALOR A PAGAR R&#36;");
+		sb.append("</td>");
+		sb.append("<td class=\"direita 100pt\">");
 		sb.append(this.formataNumero(nfe.getInfNFe().getTotal().getIcmsTot().getvNF().toString()));
 		sb.append("</td>");
 		sb.append("</tr>");
