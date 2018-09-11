@@ -236,7 +236,7 @@ public class NFCePDFGeradorHtml {
 		
 		for(Pag pag : nfe.getInfNFe().getPag()) {
 			
-			// Vers�o 4.00 foi adicionado um atributo detPag
+			// Vers�o 4.00 foi adicionado um atributo detPag
 			if(pag.getDetPag() != null) {
 				
 				DetPag detPag = pag.getDetPag(); 
@@ -427,12 +427,25 @@ public class NFCePDFGeradorHtml {
 	private String qrcode(NfeProc nfeProc) {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("<tr>");
-		sb.append("<td colspan=\"2\" align=\"center\" class=\"200pt\">");
-		sb.append(String.format("Protocolo de Autoriza&ccedil;&atilde;o: %s<br/>", nfeProc.getProtNFe().getInfProt().getnProt()));
-		sb.append(String.format("Data de Autoriza&ccedil;&atilde;o: %s<br/>",this.formataData(nfeProc.getProtNFe().getInfProt().getDhRecbto())));
-		sb.append("</td>");
-		sb.append("</tr>");
+		if(nfeProc.getProtNFe() == null) {
+			
+			sb.append("<tr>");
+			sb.append("<td colspan=\"2\" align=\"center\" class=\"200pt\">");
+			sb.append("EMITIDA EM CONTINGENCIA<br/>");
+			sb.append("Pendente de Autorização");
+			sb.append("</td>");
+			sb.append("</tr>");
+			
+		}else {
+		
+			sb.append("<tr>");
+			sb.append("<td colspan=\"2\" align=\"center\" class=\"200pt\">");
+			sb.append(String.format("Protocolo de Autoriza&ccedil;&atilde;o: %s<br/>", nfeProc.getProtNFe().getInfProt().getnProt()));
+			sb.append(String.format("Data de Autoriza&ccedil;&atilde;o: %s<br/>",this.formataData(nfeProc.getProtNFe().getInfProt().getDhRecbto())));
+			sb.append("</td>");
+			sb.append("</tr>");
+			
+		}
 		
 		if(nfeProc.getNfe().getInfNFeSupl().getQrCode() != null) {
 			sb.append("<tr>");

@@ -7,7 +7,7 @@ public class NFCePDFTeste {
 	@Test
 	public void gerar() {
 		//this.gerarPDFXML310();
-		//this.gerarPDFXML400();
+		this.gerarPDFXML400();
 	}
 	
 	private void gerarPDFXML310() {
@@ -234,7 +234,89 @@ public class NFCePDFTeste {
 				+ "0511000186650010000010169000022671</chNFe><dhRecbto>2018-07-11T12:59:15-03:00</dhRecbto><nProt>14"
 				+ "1180000878683</nProt><digVal>UQta0ENpzh2mov0QuK0CWvAlnKM=</digVal><cStat>100</cStat><xMotivo>Auto"
 				+ "rizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>";
+		
+		xml = "<nfeProc versao=\"4.00\" xmlns=\"http://www.portalfiscal.inf.br/nfe\"><NFe><infNFe Id=\"NFe15180907272825004797650010000000211345371905\" versao=\"4.00\"><ide><cUF>15</cUF><cNF>34537190</cNF><natOp>Venda de mercadoria adquirida de terceiro</natOp><mod>65</mod><serie>1</serie><nNF>21</nNF><dhEmi>2018-09-06T15:37:25-03:00</dhEmi><tpNF>1</tpNF><idDest>1</idDest><cMunFG>1501402</cMunFG><tpImp>4</tpImp><tpEmis>1</tpEmis><cDV>5</cDV><tpAmb>2</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><procEmi>0</procEmi><verProc>1.0</verProc></ide><emit><CNPJ>07272825004797</CNPJ><xNome>TECNO INDUSTRIA E COMERCIO DE COMPUTADO</xNome><xFant>TECNO INDUSTRIA E COMERCIO DE COMPUTADO</xFant><enderEmit><xLgr>TRV PADRE EUTIQUIO</xLgr><nro>1078</nro><xCpl>SHOPPING PATIO BELEMLOJA 147</xCpl><xBairro>BATISTA CAMPOS</xBairro><cMun>1501402</cMun><xMun>1501402</xMun><UF>PA</UF><CEP>66023710</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>8536535448</fone></enderEmit><IE>156052750</IE><CRT>3</CRT></emit><dest><CPF>47110973093</CPF><xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome><indIEDest>9</indIEDest></dest><det nItem=\"1\"><prod><cProd>23321</cProd><cEAN>SEM GTIN</cEAN><xProd>NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xProd><NCM>85234990</NCM><CEST>0000000</CEST><CFOP>5405</CFOP><uCom>UND</uCom><qCom>1</qCom><vUnCom>199.9</vUnCom><vProd>199.90</vProd><cEANTrib>SEM GTIN</cEANTrib><uTrib>UND</uTrib><qTrib>1</qTrib><vUnTrib>199.9</vUnTrib><indTot>1</indTot></prod><imposto><vTotTrib>48.40</vTotTrib><ICMS><ICMS60><orig>1</orig><CST>60</CST></ICMS60></ICMS></imposto></det><total><ICMSTot><vBC>0.00</vBC><vICMS>0.00</vICMS><vICMSDeson>0.00</vICMSDeson><vFCP>0.00</vFCP><vBCST>0.00</vBCST><vST>0.00</vST><vFCPST>0.00</vFCPST><vFCPSTRet>0.00</vFCPSTRet><vProd>199.90</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc><vII>0.00</vII><vIPI>0.00</vIPI><vIPIDevol>0.00</vIPIDevol><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vOutro>0.00</vOutro><vNF>199.90</vNF><vTotTrib>48.40</vTotTrib></ICMSTot></total><transp><modFrete>9</modFrete></transp><pag><detPag><tPag>01</tPag><vPag>199.90</vPag></detPag></pag></infNFe><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"/><Reference URI=\"#NFe15180907272825004797650010000000211345371905\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"/><DigestValue>C63U+Ixlthwj4Zyea7vbxnbkUcU=</DigestValue></Reference></SignedInfo><SignatureValue>Lubh8e2xESbdLJOTldP0lsAVc9s1ihQ+R61LXVtkuiBHdzmXpYd+sU5fF9nRIn/dcDtFAGP7IjII"
+				+ "H9BgfFBSJOvegzkcxbO6E7L4nnXem4NaT0jWo+BOakMEFoWhJ55M7qojD9tC8HziaV2m718e8wnF"
+				+ "8mDEyIn0xlgtw2KX/8sUgxL4DP79ytMcZZC2sPkG6V6txwB2wxeKVYsGJuc88+HpN56jjG/v+cvq"
+				+ "kHePMNvZqtsEtjisnZdu+ogkSGuIBkqIToSvxjpSCJwKj4QH/cc9sRk/j6EOSeDuyofcAKyDOH8B"
+				+ "ZjTMR4TiVkNrZer1F7ImKyemeKpZayCUNAREhQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIH/TCCBeWgAwIBAgIIH5jem6T1+r4wDQYJKoZIhvcNAQELBQAwcDELMAkGA1UEBhMCQlIxEzAR"
+				+ "BgNVBAoTCklDUC1CcmFzaWwxMjAwBgNVBAsTKUF1dG9yaWRhZGUgQ2VydGlmaWNhZG9yYSBWQUxJ"
+				+ "RCAtIEFDIFZBTElEMRgwFgYDVQQDEw9BQyBWQUxJRCBCUkFTSUwwHhcNMTgwNjAxMTgwMDM4WhcN"
+				+ "MTkwNjAxMTgwMDM4WjCBxDELMAkGA1UEBhMCQlIxCzAJBgNVBAgTAkNFMRIwEAYDVQQHEwlGT1JU"
+				+ "QUxFWkExEzARBgNVBAoTCklDUC1CcmFzaWwxGDAWBgNVBAsTD0FDIFZBTElEIEJSQVNJTDEbMBkG"
+				+ "A1UECxMSUGVzc29hIEp1cmlkaWNhIEExMQ4wDAYDVQQLEwVWQUxJRDE4MDYGA1UEAxMvVEVDTk8g"
+				+ "SU5EVVNUUklBIEUgQ09NRVJDSU8gREUgQ09NUFVUQURPUkVTIExUREEwggEiMA0GCSqGSIb3DQEB"
+				+ "AQUAA4IBDwAwggEKAoIBAQDLg72FsNG132svX3fUEpuVhkrNCUwdWpTZ1hjyIMiVJ4B8tjIsEV6+"
+				+ "SzM/Db5CmoA9XbVE09vgpvevKb89ziHS0jm1ruFUO95Q1qByiV/YIyCI0PTSk1VqLwpSQ7Uo7dBq"
+				+ "LZSMyoV+dO38kvWIO0ZEUw1W92XimWSPfU48MGOgLS9yzJr7JXgPYHZgkLpEIcFa+9YUr6AKYGYx"
+				+ "/S7j1X9ZeIgU6pB1HEBtqbt5krlVdQ+tF3krO5ZiptBex+6Uldai+LVuz8MfHe1Jjiecq93HcOZL"
+				+ "aaOdwBDUQoyJqIg1IQIaC4n3Ka/Q6clh4JBstyEuDSlrG3nmQnriPWiUyHmPAgMBAAGjggNEMIID"
+				+ "QDCBoAYIKwYBBQUHAQEEgZMwgZAwWwYIKwYBBQUHMAKGT2h0dHA6Ly9pY3AtYnJhc2lsLnZhbGlk"
+				+ "Y2VydGlmaWNhZG9yYS5jb20uYnIvYWMtdmFsaWRicmFzaWwvYWMtdmFsaWRicmFzaWx2Mi5wN2Iw"
+				+ "MQYIKwYBBQUHMAGGJWh0dHA6Ly9vY3NwLnZhbGlkY2VydGlmaWNhZG9yYS5jb20uYnIwCQYDVR0T"
+				+ "BAIwADAfBgNVHSMEGDAWgBQFzReNxh8URo3o59PjDL1NHDYRrTB0BgNVHSAEbTBrMGkGBmBMAQIB"
+				+ "JDBfMF0GCCsGAQUFBwIBFlFodHRwOi8vaWNwLWJyYXNpbC52YWxpZGNlcnRpZmljYWRvcmEuY29t"
+				+ "LmJyL2FjLXZhbGlkYnJhc2lsL2RwYy1hYy12YWxpZGJyYXNpbC5wZGYwggESBgNVHR8EggEJMIIB"
+				+ "BTBZoFegVYZTaHR0cDovL2ljcC1icmFzaWwudmFsaWRjZXJ0aWZpY2Fkb3JhLmNvbS5ici9hYy12"
+				+ "YWxpZGJyYXNpbC9sY3ItYWMtdmFsaWRicmFzaWx2Mi5jcmwwWqBYoFaGVGh0dHA6Ly9pY3AtYnJh"
+				+ "c2lsMi52YWxpZGNlcnRpZmljYWRvcmEuY29tLmJyL2FjLXZhbGlkYnJhc2lsL2xjci1hYy12YWxp"
+				+ "ZGJyYXNpbHYyLmNybDBMoEqgSIZGaHR0cDovL3JlcG9zaXRvcmlvLmljcGJyYXNpbC5nb3YuYnIv"
+				+ "bGNyL1ZBTElEL2xjci1hYy12YWxpZGJyYXNpbHYyLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0l"
+				+ "BBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGzBgNVHREEgaswgaiBFXRob2xhbmRhQGlieXRlLmNv"
+				+ "bS5icqA4BgVgTAEDBKAvBC0yMzA1MTk3NjcwMzk2ODkyMzUzMDAwMDAwMDAwMDAwMDAwMDAwMDAw"
+				+ "MDAwMDCgIQYFYEwBAwKgGAQWUEVEUk8gSVZPIE1FTkRFUyBGUk9UQaAZBgVgTAEDA6AQBA4wNzI3"
+				+ "MjgyNTAwMDEwNKAXBgVgTAEDB6AOBAwwMDAwMDAwMDAwMDAwDQYJKoZIhvcNAQELBQADggIBAGE/"
+				+ "beEJE1v05PpqqxGr34Ix4EEweSaxPve3y6UyaJYsja7o9SInmJPRIz8mEAFFW3Z8ImEoKBVz4xy2"
+				+ "05SP6gm/ZzZ5qQyNbHS9gcRkTxTl921q+WPWpYPOg5c0NT/C6oHO7qbk7OpE4DySI2Z0RRqTOmzy"
+				+ "KOP+hf1GAltxkW/3Io3g3POA22UveQbP4jxLDeflAU1DRkCKt1eVcyX7hrINxsKNnM5iqUmBK2+b"
+				+ "Mav0j12gK1m3ae766IQJz8m02Fz5Vt+BBbKhEQ3OuTazrv/nPiXfj2DYWdrrBTNzMxu0NtH8v+L8"
+				+ "J9rjHBb60BvwD40eoHj0XHWCdogEkGl4kDbywXdQl0X03Vqveai8IMhY3XDpu8/VJw+KG8wcl+ei"
+				+ "ieBBDECWAmr/BdL9cMsq2tM8dUNl84mAQrTL31Apr9hZqVVsnkLPRY0A7X2/HmV4WCqh+5E2i3vV"
+				+ "FC9KzCPcwf0mkRRCAUXynZAcNGJ+J648v3gNS0gg/H3L85+Fllhc9sPYvjoggj5FnENUPCAvZ11+"
+				+ "BQzzVrjZpANWLeNdyV7W8njO+MNsq2dV5htTmmkfW5v5lfXl7PBdn40nXsGdvktit3nMallRsewr"
+				+ "Sz7d/U7na6witV9a8HIBPUUAeKCr9y4+zxXpZKDaEn0pmsrguiAhtv5iuPon+KU7tC9gL6Ue</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe versao=\"4.00\"><infProt><tpAmb>2</tpAmb><verAplic>SVRSnfce201808291440</verAplic><chNFe>15180907272825004797650010000000211345371905</chNFe><dhRecbto>2018-09-06T15:37:37-03:00</dhRecbto><nProt>315180004056932</nProt><digVal>C63U+Ixlthwj4Zyea7vbxnbkUcU=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>";
 	
+		xml = "<NFe xmlns=\"http://www.portalfiscal.inf.br/nfe\"><infNFe Id=\"NFe15180907272825004797650020000000129520256386\" versao=\"4.00\"><ide><cUF>15</cUF><cNF>52025638</cNF><natOp>Venda de mercadoria adquirida de terceiro</natOp><mod>65</mod><serie>2</serie><nNF>12</nNF><dhEmi>2018-09-11T14:35:29-03:00</dhEmi><tpNF>1</tpNF><idDest>1</idDest><cMunFG>1501402</cMunFG><tpImp>4</tpImp><tpEmis>9</tpEmis><cDV>6</cDV><tpAmb>2</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><procEmi>0</procEmi><verProc>1.0</verProc><dhCont>2018-01-01T00:00:00-02:00</dhCont><xJust>PROBLEMAS NA COMUNICACAO</xJust></ide><emit><CNPJ>07272825004797</CNPJ><xNome>TECNO INDUSTRIA E COMERCIO DE COMPUTADO</xNome><xFant>TECNO INDUSTRIA E COMERCIO DE COMPUTADO</xFant><enderEmit><xLgr>TRV PADRE EUTIQUIO</xLgr><nro>1078</nro><xCpl>SHOPPING PATIO BELEMLOJA 147</xCpl><xBairro>BATISTA CAMPOS</xBairro><cMun>1501402</cMun><xMun>1501402</xMun><UF>PA</UF><CEP>66023710</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>8536535448</fone></enderEmit><IE>156052750</IE><CRT>3</CRT></emit><dest><CPF>47110973093</CPF><xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome><indIEDest>9</indIEDest></dest><det nItem=\"1\"><prod><cProd>23321</cProd><cEAN>SEM GTIN</cEAN><xProd>NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xProd><NCM>85234990</NCM><CEST>0000000</CEST><CFOP>5405</CFOP><uCom>UND</uCom><qCom>1</qCom><vUnCom>199.9</vUnCom><vProd>199.90</vProd><cEANTrib>SEM GTIN</cEANTrib><uTrib>UND</uTrib><qTrib>1</qTrib><vUnTrib>199.9</vUnTrib><indTot>1</indTot></prod><imposto><vTotTrib>48.40</vTotTrib><ICMS><ICMS60><orig>1</orig><CST>60</CST></ICMS60></ICMS></imposto></det><total><ICMSTot><vBC>0.00</vBC><vICMS>0.00</vICMS><vICMSDeson>0.00</vICMSDeson><vFCP>0.00</vFCP><vBCST>0.00</vBCST><vST>0.00</vST><vFCPST>0.00</vFCPST><vFCPSTRet>0.00</vFCPSTRet><vProd>199.90</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc><vII>0.00</vII><vIPI>0.00</vIPI><vIPIDevol>0.00</vIPIDevol><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vOutro>0.00</vOutro><vNF>199.90</vNF><vTotTrib>48.40</vTotTrib></ICMSTot></total><transp><modFrete>9</modFrete></transp><pag><detPag><tPag>01</tPag><vPag>199.90</vPag></detPag></pag></infNFe><infNFeSupl><qrCode><![CDATA[https://appnfc.sefa.pa.gov.br/portal-homologacao/view/consultas/nfce/nfceForm.seam?chNFe=15180907272825004797650020000000129520256386&nVersao=100&tpAmb=2&cDest=47110973093&dhEmi=323031382d30392d31315431343a33353a32392d30333a3030&vNF=199.90&vICMS=0.00&digVal=774e33414e643773534c68414537693373425034753276536b69593d&cIdToken=000001&cHashQRCode=39dee09ce7eee40f336a248b00d922e279e8d856]]></qrCode><urlChave>https://appnfc.sefa.pa.gov.br/portal/view/consultas/nfce/consultanfce.seam</urlChave></infNFeSupl><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"/><Reference URI=\"#NFe15180907272825004797650020000000129520256386\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"/><DigestValue>wN3ANd7sSLhAE7i3sBP4u2vSkiY=</DigestValue></Reference></SignedInfo><SignatureValue>ue+OZTJperViGj1eQKTCMzV0giwTgzQX/i5/adLIlzOapBixh5cJoSFVCzb/fpUaIM44/8m5TdmA"
+				+ "WluMRcd3qRJ6iWwfzP7W5FaSv00PlOgu2wruyxntP/N9Mx6AMs7bh7LCmSgMcNUXyXp66X2p6ny2"
+				+ "wou5BNC31hlxR2/dAsemxduEd2gBirgYgBaH8bRe80lp+kujJnens/jZ4cLlwOjB1mVm+2DQypmH"
+				+ "2ZignmAbT8WrLp9dATmXpA8QAUFwv5nmJw/EFQKsqvtiZqzVIUQ6K+cUNHYX3C+ytfY526Yk6W93"
+				+ "WZUR0zSNogoLn+HJ7zrzOqsPhzrrtCTDNV5IEA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIH/TCCBeWgAwIBAgIIH5jem6T1+r4wDQYJKoZIhvcNAQELBQAwcDELMAkGA1UEBhMCQlIxEzAR"
+				+ "BgNVBAoTCklDUC1CcmFzaWwxMjAwBgNVBAsTKUF1dG9yaWRhZGUgQ2VydGlmaWNhZG9yYSBWQUxJ"
+				+ "RCAtIEFDIFZBTElEMRgwFgYDVQQDEw9BQyBWQUxJRCBCUkFTSUwwHhcNMTgwNjAxMTgwMDM4WhcN"
+				+ "MTkwNjAxMTgwMDM4WjCBxDELMAkGA1UEBhMCQlIxCzAJBgNVBAgTAkNFMRIwEAYDVQQHEwlGT1JU"
+				+ "QUxFWkExEzARBgNVBAoTCklDUC1CcmFzaWwxGDAWBgNVBAsTD0FDIFZBTElEIEJSQVNJTDEbMBkG"
+				+ "A1UECxMSUGVzc29hIEp1cmlkaWNhIEExMQ4wDAYDVQQLEwVWQUxJRDE4MDYGA1UEAxMvVEVDTk8g"
+				+ "SU5EVVNUUklBIEUgQ09NRVJDSU8gREUgQ09NUFVUQURPUkVTIExUREEwggEiMA0GCSqGSIb3DQEB"
+				+ "AQUAA4IBDwAwggEKAoIBAQDLg72FsNG132svX3fUEpuVhkrNCUwdWpTZ1hjyIMiVJ4B8tjIsEV6+"
+				+ "SzM/Db5CmoA9XbVE09vgpvevKb89ziHS0jm1ruFUO95Q1qByiV/YIyCI0PTSk1VqLwpSQ7Uo7dBq"
+				+ "LZSMyoV+dO38kvWIO0ZEUw1W92XimWSPfU48MGOgLS9yzJr7JXgPYHZgkLpEIcFa+9YUr6AKYGYx"
+				+ "/S7j1X9ZeIgU6pB1HEBtqbt5krlVdQ+tF3krO5ZiptBex+6Uldai+LVuz8MfHe1Jjiecq93HcOZL"
+				+ "aaOdwBDUQoyJqIg1IQIaC4n3Ka/Q6clh4JBstyEuDSlrG3nmQnriPWiUyHmPAgMBAAGjggNEMIID"
+				+ "QDCBoAYIKwYBBQUHAQEEgZMwgZAwWwYIKwYBBQUHMAKGT2h0dHA6Ly9pY3AtYnJhc2lsLnZhbGlk"
+				+ "Y2VydGlmaWNhZG9yYS5jb20uYnIvYWMtdmFsaWRicmFzaWwvYWMtdmFsaWRicmFzaWx2Mi5wN2Iw"
+				+ "MQYIKwYBBQUHMAGGJWh0dHA6Ly9vY3NwLnZhbGlkY2VydGlmaWNhZG9yYS5jb20uYnIwCQYDVR0T"
+				+ "BAIwADAfBgNVHSMEGDAWgBQFzReNxh8URo3o59PjDL1NHDYRrTB0BgNVHSAEbTBrMGkGBmBMAQIB"
+				+ "JDBfMF0GCCsGAQUFBwIBFlFodHRwOi8vaWNwLWJyYXNpbC52YWxpZGNlcnRpZmljYWRvcmEuY29t"
+				+ "LmJyL2FjLXZhbGlkYnJhc2lsL2RwYy1hYy12YWxpZGJyYXNpbC5wZGYwggESBgNVHR8EggEJMIIB"
+				+ "BTBZoFegVYZTaHR0cDovL2ljcC1icmFzaWwudmFsaWRjZXJ0aWZpY2Fkb3JhLmNvbS5ici9hYy12"
+				+ "YWxpZGJyYXNpbC9sY3ItYWMtdmFsaWRicmFzaWx2Mi5jcmwwWqBYoFaGVGh0dHA6Ly9pY3AtYnJh"
+				+ "c2lsMi52YWxpZGNlcnRpZmljYWRvcmEuY29tLmJyL2FjLXZhbGlkYnJhc2lsL2xjci1hYy12YWxp"
+				+ "ZGJyYXNpbHYyLmNybDBMoEqgSIZGaHR0cDovL3JlcG9zaXRvcmlvLmljcGJyYXNpbC5nb3YuYnIv"
+				+ "bGNyL1ZBTElEL2xjci1hYy12YWxpZGJyYXNpbHYyLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0l"
+				+ "BBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGzBgNVHREEgaswgaiBFXRob2xhbmRhQGlieXRlLmNv"
+				+ "bS5icqA4BgVgTAEDBKAvBC0yMzA1MTk3NjcwMzk2ODkyMzUzMDAwMDAwMDAwMDAwMDAwMDAwMDAw"
+				+ "MDAwMDCgIQYFYEwBAwKgGAQWUEVEUk8gSVZPIE1FTkRFUyBGUk9UQaAZBgVgTAEDA6AQBA4wNzI3"
+				+ "MjgyNTAwMDEwNKAXBgVgTAEDB6AOBAwwMDAwMDAwMDAwMDAwDQYJKoZIhvcNAQELBQADggIBAGE/"
+				+ "beEJE1v05PpqqxGr34Ix4EEweSaxPve3y6UyaJYsja7o9SInmJPRIz8mEAFFW3Z8ImEoKBVz4xy2"
+				+ "05SP6gm/ZzZ5qQyNbHS9gcRkTxTl921q+WPWpYPOg5c0NT/C6oHO7qbk7OpE4DySI2Z0RRqTOmzy"
+				+ "KOP+hf1GAltxkW/3Io3g3POA22UveQbP4jxLDeflAU1DRkCKt1eVcyX7hrINxsKNnM5iqUmBK2+b"
+				+ "Mav0j12gK1m3ae766IQJz8m02Fz5Vt+BBbKhEQ3OuTazrv/nPiXfj2DYWdrrBTNzMxu0NtH8v+L8"
+				+ "J9rjHBb60BvwD40eoHj0XHWCdogEkGl4kDbywXdQl0X03Vqveai8IMhY3XDpu8/VJw+KG8wcl+ei"
+				+ "ieBBDECWAmr/BdL9cMsq2tM8dUNl84mAQrTL31Apr9hZqVVsnkLPRY0A7X2/HmV4WCqh+5E2i3vV"
+				+ "FC9KzCPcwf0mkRRCAUXynZAcNGJ+J648v3gNS0gg/H3L85+Fllhc9sPYvjoggj5FnENUPCAvZ11+"
+				+ "BQzzVrjZpANWLeNdyV7W8njO+MNsq2dV5htTmmkfW5v5lfXl7PBdn40nXsGdvktit3nMallRsewr"
+				+ "Sz7d/U7na6witV9a8HIBPUUAeKCr9y4+zxXpZKDaEn0pmsrguiAhtv5iuPon+KU7tC9gL6Ue</X509Certificate></X509Data></KeyInfo></Signature></NFe>";
+				
 		try {
 			NFCePDF nfcePdf = new NFCePDF(xml, null);
 			nfcePdf.gerarPdfAutorizacao();
