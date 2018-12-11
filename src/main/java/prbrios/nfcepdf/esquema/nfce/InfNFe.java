@@ -37,7 +37,7 @@ public class InfNFe {
 	private Transp transp;
 
 	@XmlElement(name="pag")
-	private List<Pag> pag;
+	private Pag pag;
 
 	@XmlElement(name="infAdic")
 	private InfAdic infAdic;
@@ -106,11 +106,11 @@ public class InfNFe {
 		this.transp = transp;
 	}
 
-	public List<Pag> getPag() {
+	public Pag getPag() {
 		return pag;
 	}
 
-	public void setPag(List<Pag> pag) {
+	public void setPag(Pag pag) {
 		this.pag = pag;
 	}
 

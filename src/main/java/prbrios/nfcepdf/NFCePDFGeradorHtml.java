@@ -234,36 +234,11 @@ public class NFCePDFGeradorHtml {
 		
 		Double vPag = 0.00;
 		
-		for(Pag pag : nfe.getInfNFe().getPag()) {
+		for(DetPag pag : nfe.getInfNFe().getPag().getDetPag()) {
 			
 			// Vers�o 4.00 foi adicionado um atributo detPag
-			if(pag.getDetPag() != null) {
+			if(pag != null) {
 				
-				DetPag detPag = pag.getDetPag(); 
-				
-				if(detPag.gettPag().equals("01")) 
-					meioPagamento = "Dinheiro";
-				else if(detPag.gettPag().equals("02")) 
-					meioPagamento = "Cheque";
-				else if(detPag.gettPag().equals("03")) 
-					meioPagamento = "Cart&atilde;o Cr&eacute;dito";
-				else if(detPag.gettPag().equals("04")) 
-					meioPagamento = "Cart&atilde;o D&eacute;bito";
-				else if(detPag.gettPag().equals("05")) 
-					meioPagamento = "Cr&eacute;dito Loja";
-				else if(detPag.gettPag().equals("10")) 
-					meioPagamento = "Vale Alimenta&ccedil;&atilde;o";
-				else if(detPag.gettPag().equals("11")) 
-					meioPagamento = "Vale Refei&ccedil;&atilde;o";
-				else if(detPag.gettPag().equals("12")) 
-					meioPagamento = "Vale Presente";
-				else if(detPag.gettPag().equals("13")) 
-					meioPagamento = "Vale Combust&iacute;vel";
-
-				vPag = detPag.getvPag();
-				
-			}else {
-			
 				if(pag.gettPag().equals("01")) 
 					meioPagamento = "Dinheiro";
 				else if(pag.gettPag().equals("02")) 
@@ -282,7 +257,7 @@ public class NFCePDFGeradorHtml {
 					meioPagamento = "Vale Presente";
 				else if(pag.gettPag().equals("13")) 
 					meioPagamento = "Vale Combust&iacute;vel";
-				
+
 				vPag = pag.getvPag();
 
 			}
@@ -297,6 +272,20 @@ public class NFCePDFGeradorHtml {
 			sb.append("</tr>");
 			
 		}
+		
+		if(nfe.getInfNFe().getPag().getvTroco() != null && nfe.getInfNFe().getPag().getvTroco() > 0) {
+			
+			sb.append("<tr>");
+			sb.append("<td>");
+			sb.append("Troco");
+			sb.append("</td>");
+			sb.append("<td class=\"direita\">");
+			sb.append(this.formataNumero(nfe.getInfNFe().getPag().getvTroco().toString()));
+			sb.append("</td>");
+			sb.append("</tr>");
+			
+		}
+			
 		
 		return sb.toString();
 	}

@@ -1,5 +1,7 @@
 package prbrios.nfcepdf.esquema.nfce;
 
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -9,15 +11,18 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Pag {
 
-	@XmlElement(name="tPag")
+	@XmlElement(name = "tPag")
 	private String tPag;
-	
-	@XmlElement(name="vPag")
+
+	@XmlElement(name = "vPag")
 	private Double vPag;
 
-	@XmlElement(name="detPag")
-	private DetPag detPag;
-	
+	@XmlElement(name = "detPag")
+	private List<DetPag> detPag;
+
+	@XmlElement(name = "vTroco")
+	private Double vTroco;
+
 	public String gettPag() {
 		return tPag;
 	}
@@ -34,12 +39,20 @@ public class Pag {
 		this.vPag = vPag;
 	}
 
-	public DetPag getDetPag() {
+	public List<DetPag> getDetPag() {
 		return detPag;
 	}
 
-	public void setDetPag(DetPag detPag) {
+	public void setDetPag(List<DetPag> detPag) {
 		this.detPag = detPag;
+	}
+
+	public Double getvTroco() {
+		return vTroco;
+	}
+
+	public void setvTroco(Double vTroco) {
+		this.vTroco = vTroco;
 	}
 
 }

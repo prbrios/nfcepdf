@@ -1,13 +1,45 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>prbrios</groupId>
 	<artifactId>nfcepdf</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.4</version>
 
 	<properties>
 		<itext-versiona>5.5.12</itext-versiona>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>internal</id>
+			<name>Corporate Repository</name>
+			<url>http://192.168.25.250:8004/repository/internal/</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+
+	<contributors>
+		<contributor>
+			<name>Paulo</name>
+			<email>prbrios@gmail.com</email>
+			<!--
+			<url>http://noellemarie.com</url>
+			<organization>Noelle Marie</organization>
+			<organizationUrl>http://noellemarie.com</organizationUrl>
+			-->
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>America/Vancouver</timezone>
+			<properties>
+				<gtalk>prbrios@gmail.com</gtalk>
+			</properties>
+		</contributor>
+	</contributors>
 
 	<dependencies>
 
@@ -47,7 +79,7 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
 
 </project>
