@@ -5,6 +5,7 @@
 	<groupId>prbrios</groupId>
 	<artifactId>nfcepdf</artifactId>
 	<version>1.0.4</version>
+	<packaging>jar</packaging>
 
 	<properties>
 		<itext-versiona>5.5.12</itext-versiona>
