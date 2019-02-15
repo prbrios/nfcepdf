@@ -421,7 +421,7 @@ public class NFCePDFGeradorHtml {
 			sb.append("<tr>");
 			sb.append("<td colspan=\"2\" align=\"center\" class=\"200pt\">");
 			sb.append("EMITIDA EM CONTINGENCIA<br/>");
-			sb.append("Pendente de Autorização");
+			sb.append("Pendente de Autoriza&ccedil;&atilde;o");
 			sb.append("</td>");
 			sb.append("</tr>");
 			
