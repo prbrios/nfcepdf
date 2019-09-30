@@ -14,12 +14,13 @@
 	</properties>
 
 	<distributionManagement>
+		<snapshotRepository>
+			<id>mavenunigex-bucket-snapshot</id>
+			<url>gs://mavenunigex/snapshot</url>
+		</snapshotRepository>
 		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>internal</id>
-			<name>Corporate Repository</name>
-			<url>http://192.168.25.250:8004/repository/internal/</url>
-			<layout>default</layout>
+			<id>mavenunigex-bucket-release</id>
+			<url>gs://mavenunigex/release</url>
 		</repository>
 	</distributionManagement>
 
@@ -82,5 +83,15 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>com.gkatzioura.maven.cloud</groupId>
+				<artifactId>google-storage-wagon</artifactId>
+				<version>1.0</version>
+			</extension>
+		</extensions>
+	</build>
 
 </project>
