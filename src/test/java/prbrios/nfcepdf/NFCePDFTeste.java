@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class NFCePDFTeste {
 	
-	/*
+	
 	@Test
 	public void gerar() {
 		//this.gerarPDFXML310();
@@ -371,5 +371,5 @@ public class NFCePDFTeste {
 			System.out.println(e.getMessage());
 		}
 	}
-	*/
+	
 }

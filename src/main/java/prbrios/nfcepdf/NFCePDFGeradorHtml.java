@@ -191,8 +191,6 @@ public class NFCePDFGeradorHtml {
 		sb.append("</td>");
 		sb.append("</tr>");
 		
-		sb.append(this.desconto(nfe));
-		
 		sb.append("<tr>");
 		sb.append("<td class=\"100pt\">");
 		sb.append("VALOR TOTAL R&#36;");
@@ -202,6 +200,8 @@ public class NFCePDFGeradorHtml {
 		sb.append("</td>");
 		sb.append("</tr>");
 		
+		sb.append(this.desconto(nfe));
+
 		if(nfe.getInfNFe().getTotal().getIcmsTot().getvOutro() != null) {
 			if(nfe.getInfNFe().getTotal().getIcmsTot().getvOutro() > 0.00 ) {
 				sb.append("<tr>");
