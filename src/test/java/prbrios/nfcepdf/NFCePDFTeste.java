@@ -318,6 +318,47 @@ public class NFCePDFTeste {
 				+ "BQzzVrjZpANWLeNdyV7W8njO+MNsq2dV5htTmmkfW5v5lfXl7PBdn40nXsGdvktit3nMallRsewr"
 				+ "Sz7d/U7na6witV9a8HIBPUUAeKCr9y4+zxXpZKDaEn0pmsrguiAhtv5iuPon+KU7tC9gL6Ue</X509Certificate></X509Data></KeyInfo></Signature></NFe></nfeProc>";
 		
+		xml = "<nfeProc versao=\"4.00\" xmlns=\"http://www.portalfiscal.inf.br/nfe\"><NFe><infNFe Id=\"NFe24210511926896000150650010000396751617040411\" versao=\"4.00\"><ide><cUF>24</cUF><cNF>61704041</cNF><natOp>Venda de mercadoria adquirida de terceiro</natOp><mod>65</mod><serie>1</serie><nNF>39675</nNF><dhEmi>2021-05-03T14:42:57-03:00</dhEmi><tpNF>1</tpNF><idDest>1</idDest><cMunFG>2408003</cMunFG><tpImp>4</tpImp><tpEmis>1</tpEmis><cDV>1</cDV><tpAmb>1</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><procEmi>0</procEmi><verProc>1.0</verProc></ide><emit><CNPJ>11926896000150</CNPJ><xNome>WA COMERCIO DE ALIMENTICIOS LTDA</xNome><xFant>WA COMERCIO DE ALIMENTICIOS LTDA</xFant><enderEmit><xLgr>TV JOSE JERONIMO DE MEDEIROS</xLgr><nro>220</nro><xBairro>LAGOA DO MATO</xBairro><cMun>2408003</cMun><xMun>Mossoró</xMun><UF>RN</UF><CEP>59604347</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>8433162839</fone></enderEmit><IE>200269623</IE><CRT>3</CRT></emit><det nItem=\"1\"><prod><cProd>P039669</cProd><cEAN>SEM GTIN</cEAN><xProd>BOMBONS FINOS GATORICES GAROTO 30X250G</xProd><NCM>18069000</NCM><CFOP>5102</CFOP><uCom>UNI</uCom><qCom>1</qCom><vUnCom>9.91</vUnCom><vProd>9.91</vProd><cEANTrib>SEM GTIN</cEANTrib><uTrib>UNI</uTrib><qTrib>1</qTrib><vUnTrib>9.91</vUnTrib><vDesc>0.30</vDesc><indTot>1</indTot></prod><imposto><ICMS><ICMS00><orig>1</orig><CST>00</CST><modBC>3</modBC><vBC>9.91</vBC><pICMS>18.00</pICMS><vICMS>1.78</vICMS></ICMS00></ICMS></imposto></det><total><ICMSTot><vBC>9.91</vBC><vICMS>1.78</vICMS><vICMSDeson>0.00</vICMSDeson><vFCP>0.00</vFCP><vBCST>0.00</vBCST><vST>0.00</vST><vFCPST>0.00</vFCPST><vFCPSTRet>0.00</vFCPSTRet><vProd>9.91</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.30</vDesc><vII>0.00</vII><vIPI>0.00</vIPI><vIPIDevol>0.00</vIPIDevol><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vOutro>0.00</vOutro><vNF>9.61</vNF></ICMSTot></total><transp><modFrete>9</modFrete></transp><pag><detPag><tPag>01</tPag><vPag>50.00</vPag></detPag><vTroco>40.39</vTroco></pag><infAdic><infCpl>Operador: MICHELE(000002)</infCpl></infAdic></infNFe><infNFeSupl><qrCode><![CDATA[http://nfce.set.rn.gov.br/consultarNFCe.aspx?p=24210511926896000150650010000396751617040411|2|1|1|D74654B0A32219486F8BE12F16EFA129A09C967C]]></qrCode><urlChave>www.set.rn.gov.br/nfce/consulta</urlChave></infNFeSupl><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"/><Reference URI=\"#NFe24210511926896000150650010000396751617040411\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"/><DigestValue>Ze639G0ASHncUQOql34Uek/70vo=</DigestValue></Reference></SignedInfo><SignatureValue>cNPjyiTVroLFIbZUg3zsLdUD5bNlhPx3nX0o6f3UU1OPf3U6GUj3H99OAJ4Tagrj07GDJ9eVqGpE\r\n" + 
+				"G8GOj1aU6qHmhzUTioykLaNo6m7gNkk7DULfne0KLQCLfyEOQUOVrICyEWcgqpB85Gr596PJF07I\r\n" + 
+				"tV9dEZqCh06m1j6QnyazWqql+gmZIp/HIlXozUeI1OXaJpxlrvoIwGbCviZG2Mdmq3s8+JrPrcMt\r\n" + 
+				"1L2ZP+2GYTdhluPdu80mlqgJo7ZDUo44gbBayS1VF/5z7EMyMKbdlKoSi3PvFz7ZkitDevVUu3ya\r\n" + 
+				"wwPt9iMMjokauS8NShJneD5AbW+0g2zg2Tqirw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIH+zCCBeOgAwIBAgIId+IxY++wnAswDQYJKoZIhvcNAQELBQAwdTELMAkGA1UEBhMCQlIxEzAR\r\n" + 
+				"BgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFs\r\n" + 
+				"IGRvIEJyYXNpbCAtIFJGQjEZMBcGA1UEAxMQQUMgT05MSU5FIFJGQiB2NTAeFw0yMDA1MjEyMTQ0\r\n" + 
+				"NDJaFw0yMTA1MjEyMTQ0NDJaMIIBBTELMAkGA1UEBhMCQlIxCzAJBgNVBAgTAlJOMRAwDgYDVQQH\r\n" + 
+				"EwdNT1NTT1JPMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl\r\n" + 
+				"Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNOUEogQTExIjAg\r\n" + 
+				"BgNVBAsTGUFSIFNPTElNT0VTIENFUlRJRklDQURPUkExFzAVBgNVBAsTDjIyNzU5NTMxMDAwMTAz\r\n" + 
+				"MTUwMwYDVQQDEyxXQSBDT01FUkNJTyBERSBBTElNRU5UT1MgTFREQToxMTkyNjg5NjAwMDE1MDCC\r\n" + 
+				"ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN/O+XpYwLCYSlTP9YsqBxpeBEqwHSc+y3tN\r\n" + 
+				"zzrFSdU1jd1M8Xew8I7vtaR7DeDsbUUSqsMaXi3ByAGpA0ZJBbcsUu4toRUIAJeTJd+a1njVpdff\r\n" + 
+				"Kbr0ZSrcTFfwb3MTUP2BOEfcZuZfi3yI+rql1vefETl+dZEbYcxamJ2/wb8wo+Wee56a7nB2XFyx\r\n" + 
+				"Cw1aM8p/ldcBsGOeH69X+3CEdRZU8azU9s2Dklmezs5HX9/a7OzxIYuPIMI11rGRHjghUIldfJJe\r\n" + 
+				"NrQZNP9YD8KcBf3vH8mNarhiD3i8gpLfjY1+3tUnaW1/tzvoIadfaK0o1ok57Jeh4Nml9hTqzQDc\r\n" + 
+				"w98CAwEAAaOCAvswggL3MIGjBggrBgEFBQcBAQSBljCBkzBcBggrBgEFBQcwAoZQaHR0cDovL2lj\r\n" + 
+				"cC1icmFzaWwudnBraS52YWxpZGNlcnRpZmljYWRvcmEuY29tLmJyL2FjLW9ubGluZXJmYi9hYy1v\r\n" + 
+				"bmxpbmVyZmJ2NS5wN2IwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwdjUudmFsaWRjZXJ0aWZpY2Fk\r\n" + 
+				"b3JhLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFOzJzKuyKNWhvHdArt+Qb8Ptf7zpMHcG\r\n" + 
+				"A1UdIARwMG4wbAYGYEwBAgE3MGIwYAYIKwYBBQUHAgEWVGh0dHA6Ly9pY3AtYnJhc2lsLnZwa2ku\r\n" + 
+				"dmFsaWRjZXJ0aWZpY2Fkb3JhLmNvbS5ici9hYy1vbmxpbmVyZmIvZHBjLWFjLW9ubGluZXJmYnY1\r\n" + 
+				"LnBkZjCBugYDVR0fBIGyMIGvMFWgU6BRhk9odHRwOi8vaWNwLWJyYXNpbC52YWxpZGNlcnRpZmlj\r\n" + 
+				"YWRvcmEuY29tLmJyL2FjLW9ubGluZXJmYi9sY3ItYWMtb25saW5lcmZidjUuY3JsMFagVKBShlBo\r\n" + 
+				"dHRwOi8vaWNwLWJyYXNpbDIudmFsaWRjZXJ0aWZpY2Fkb3JhLmNvbS5ici9hYy1vbmxpbmVyZmIv\r\n" + 
+				"bGNyLWFjLW9ubGluZXJmYnY1LmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUH\r\n" + 
+				"AwIGCCsGAQUFBwMEMIG9BgNVHREEgbUwgbKBFWNvbnRhYmlsMUBjZHJuLmNvbS5icqA9BgVgTAED\r\n" + 
+				"BKA0BDIwNjAxMTk1NjE2MDY5OTQzNDQ5MDAwMDAwMDAwMDAwMDAwMDAwMDAzMzEwOTBTU1BQQqAm\r\n" + 
+				"BgVgTAEDAqAdBBtSQUlNVU5ETyBOT05BVE8gREUgT0xJVkVJUkGgGQYFYEwBAwOgEAQOMTE5MjY4\r\n" + 
+				"OTYwMDAxNTCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwMA0GCSqGSIb3DQEBCwUAA4ICAQAJAGUW\r\n" + 
+				"KhgdLy1pEkGH6mJ0qsT++5B7AaUMaw0+GZenzOYDweerqbMlJv6gE0ORflCiXmdQSzoSX0jjhzDE\r\n" + 
+				"BVtRm1Z/Lc65XxLwVnrk9PkHuuW6DQw0joKDj6eAhAlCnxpf0N4Y96fvTU/1SL7PYGXJpx+NINUZ\r\n" + 
+				"jGMOawW5t9Jpjw4TFBOWDXMvBuc0TqiGPYO6MhQbixR7hYMUSCNomVOqV0/RFMlW/uvX9vl5bban\r\n" + 
+				"JU1U75vu0snYkzqcwFkccHViDZTxjLLsS/ETtX3qXu0NERaGn0TAeWcyJCsKHCVNXHb9r3fNmWhu\r\n" + 
+				"Et25rAWycQS+n5OvdKQIjj9lRvOJHEi4LmgoPD+si8caryMsirzNF9aAXV3X7gboXQRqabT2Bm+7\r\n" + 
+				"YOVLKns67fN1dRlQ8S0mmMWinlLpR1KiAfkJAKd53yzJjIYhZX51AhiPJIg2yotamhlTbtwdh0OP\r\n" + 
+				"08XN/DWzFSXTSCWf8iKteQzwPuS1xDjMi3kvkOAgjFF3yFqF1ugytIq+ZGN0NI3Y71c5nb2edXE2\r\n" + 
+				"Y+9rSpiryZ+G+lnaK5CXTreuCoP1bBfHxucF9g8Y1IfvuKmWAoujJW/HErSA0Ev4X9je/0hDfgcD\r\n" + 
+				"oOu6DONtHvIOITZ//e7MDttOyagtXImJlbP5hQX4WO3ioPBno9vSKyK18mKHNrfe8bI0VA==</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe versao=\"4.00\"><infProt><tpAmb>1</tpAmb><verAplic>SVRSnfce202103291658</verAplic><chNFe>24210511926896000150650010000396751617040411</chNFe><dhRecbto>2021-05-03T14:43:14-03:00</dhRecbto><nProt>324210105984603</nProt><digVal>Ze639G0ASHncUQOql34Uek/70vo=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>";
+		
 		try {
 			NFCePDF nfcePdf = new NFCePDF(xml, null);
 			nfcePdf.gerarPdfAutorizacao();

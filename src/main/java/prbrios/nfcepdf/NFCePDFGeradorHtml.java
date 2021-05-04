@@ -191,6 +191,8 @@ public class NFCePDFGeradorHtml {
 		sb.append("</td>");
 		sb.append("</tr>");
 		
+		sb.append(this.desconto(nfe));
+		
 		sb.append("<tr>");
 		sb.append("<td class=\"100pt\">");
 		sb.append("VALOR TOTAL R&#36;");
@@ -298,6 +300,7 @@ public class NFCePDFGeradorHtml {
 		
 		StringBuilder sb = new StringBuilder();
 		if(cfe.getInfNFe().getTotal().getIcmsTot().getvDesc()!=null) {
+			/*
 			Double totVprod = 0.00;
 			for(Det det : cfe.getInfNFe().getDet()) {
 				totVprod += det.getProd().getvProd();
@@ -305,17 +308,18 @@ public class NFCePDFGeradorHtml {
 			if(totVprod > 0) {
 				sb.append("<tr>");
 				sb.append("<td class=\"100pt\">");
-				sb.append("Total bruto R&#36;");
+				sb.append("TOTAL R&#36;");
 				sb.append("</td>");
 				sb.append("<td class=\"direita 100pt\">");
 				sb.append(this.formataNumero(totVprod.toString()));
 				sb.append("</td>");
 				sb.append("</tr>");
 			}
+			*/
 			if(!cfe.getInfNFe().getTotal().getIcmsTot().getvDesc().equals("0.00")) {
 				sb.append("<tr>");
 				sb.append("<td class=\"100pt\">");
-				sb.append("Total desconto R&#36;");
+				sb.append("TOTAL DESCONTO R&#36;");
 				sb.append("</td>");
 				sb.append("<td class=\"direita 100pt\">");
 				sb.append(this.formataNumero(cfe.getInfNFe().getTotal().getIcmsTot().getvDesc().toString()));
